@@ -70,13 +70,13 @@ BEGIN
     BEGIN
         BLOCK "040904b0"
         BEGIN
-            VALUE "CompanyName", "T7efg"
-            VALUE "FileDescription", "T7_EFG"
+            VALUE "CompanyName", "Call of Duty:Redefined"
+            VALUE "FileDescription", "CODR"
             VALUE "FileVersion", VERSION_FILE
             VALUE "InternalName", "something"
-            VALUE "LegalCopyright", "Copyright (C) 2022 T7efg. All rights reserved."
-            VALUE "OriginalFilename", "T7_EFG.exe"
-            VALUE "ProductName", "T7_EFG"
+            VALUE "LegalCopyright", "Copyright (C) 2022 Call of Duty:Redefined. All rights reserved."
+            VALUE "OriginalFilename", "CODR.exe"
+            VALUE "ProductName", "CODR"
             VALUE "ProductVersion", VERSION_PRODUCT
         END
     END

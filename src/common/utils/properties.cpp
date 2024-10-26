@@ -31,7 +31,7 @@ namespace utils::properties
 		{
 			static auto props = []
 			{
-				auto path = std::filesystem::path("t7efg_players/properties.json");
+				auto path = std::filesystem::path("codr_players/properties.json");
 				const auto legacy_path = get_properties_folder() / "properties.json";
 
 				migrate_if_needed();
@@ -129,13 +129,13 @@ namespace utils::properties
 			CoTaskMemFree(path);
 		});
 
-		static auto appdata = std::filesystem::path(path) / "t7efg";
+		static auto appdata = std::filesystem::path(path) / "codr";
 		return appdata;
 	}
 
 	std::unique_lock<named_mutex> lock()
 	{
-		static named_mutex mutex{"t7efg-properties-lock"};
+		static named_mutex mutex{"codr-properties-lock"};
 		return std::unique_lock{mutex};
 	}
 

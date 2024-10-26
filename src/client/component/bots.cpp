@@ -36,7 +36,7 @@ namespace bots
 			};
 
 			std::string buffer;
-			if (!utils::io::read_file("t7efg/bots.txt", &buffer) || buffer.empty())
+			if (!utils::io::read_file("codr/bots.txt", &buffer) || buffer.empty())
 			{
 				return bot_names;
 			}

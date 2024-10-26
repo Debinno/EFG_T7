@@ -133,8 +133,8 @@ namespace console
 
 			char text[CONSOLE_BUFFER_SIZE]{0};
 
-			const auto* class_name = "T7 EFG WinConsole";
-			const auto* window_name = game::is_server() ? "T7 EFG Server" : "T7 EFG Console";
+			const auto* class_name = "COD:R WinConsole";
+			const auto* window_name = game::is_server() ? "COD:R Server" : "COD:R Console";
 
 			WNDCLASSA wnd_class{};
 			wnd_class.style = 0;

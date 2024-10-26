@@ -21,14 +21,14 @@ namespace branding
 			const auto* font = reinterpret_cast<uint32_t * (*)()>(0x141CAC8E0_g)();
 			if (!font) return;
 
-			game::R_AddCmdDrawText("""EFG T7", std::numeric_limits<int>::max(), font, static_cast<float>(x),
+			game::R_AddCmdDrawText("""COD:R", std::numeric_limits<int>::max(), font, static_cast<float>(x),
 				y + static_cast<float>(font[2]) * scale,
 				scale, scale, 0.0f, color, game::ITEM_TEXTSTYLE_NORMAL);
 		}
 
 		const char* get_ingame_console_prefix_stub()
 		{
-			return "T7 EFG> ";
+			return "COD:R> ";
 		}
 	}
 
@@ -39,7 +39,7 @@ namespace branding
 			scheduler::loop(draw_branding, scheduler::renderer);
 
 			// Change window title prefix
-			utils::hook::copy_string(0x14303F3D8_g, "T7 EFG");
+			utils::hook::copy_string(0x14303F3D8_g, "COD:R");
 
 			// Change ingame console prefix
 			utils::hook::call(0x141339970_g, get_ingame_console_prefix_stub);

@@ -83,7 +83,7 @@ namespace game
 				CoTaskMemFree(path);
 			});
 
-			static auto appdata = std::filesystem::path(path) / "t7efg";
+			static auto appdata = std::filesystem::path(path) / "codr";
 			return appdata;
 		}();
 

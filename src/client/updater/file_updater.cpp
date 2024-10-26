@@ -10,12 +10,12 @@
 #include <utils/io.hpp>
 #include <utils/compression.hpp>
 
-#define UPDATE_SERVER "https://updater.xlabs.dev/"
+#define UPDATE_SERVER "https://cod-redefined.github.io/codredefined.github.io/"
 
-#define UPDATE_FILE_MAIN UPDATE_SERVER "t7efg.json"
-#define UPDATE_FOLDER_MAIN UPDATE_SERVER "t7efg/"
+#define UPDATE_FILE_MAIN UPDATE_SERVER "codr.json"
+#define UPDATE_FOLDER_MAIN UPDATE_SERVER "server/"
 
-#define UPDATE_HOST_BINARY "T7_EFG.exe"
+#define UPDATE_HOST_BINARY "CODR.exe"
 
 namespace updater
 {

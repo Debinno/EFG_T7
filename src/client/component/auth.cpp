@@ -53,7 +53,7 @@ namespace auth
 
 		std::string get_protected_data()
 		{
-			std::string input = "t7efg-t7efg-auth";
+			std::string input = "codr-codr-auth";
 
 			DATA_BLOB data_in{}, data_out{};
 			data_in.pbData = reinterpret_cast<uint8_t*>(input.data());
@@ -98,7 +98,7 @@ namespace auth
 		{
 			static const auto is_first = []
 			{
-				static utils::nt::handle mutex = CreateMutexA(nullptr, FALSE, "t7efg_mutex");
+				static utils::nt::handle mutex = CreateMutexA(nullptr, FALSE, "codr_mutex");
 				return mutex && GetLastError() != ERROR_ALREADY_EXISTS;
 			}();
 
